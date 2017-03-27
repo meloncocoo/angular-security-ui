@@ -1,3 +1,17 @@
-<div class="sidebar-fold">
-    
+<div class="sidebar-fold icon-fold">
+  <a href="javascript:;" (click)="onExpand()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </a>
 </div>
+<ul class="nav">
+  <li *ngFor="let item of menus">
+    <a href="javascript:;" class="sidebar-title" (click)="onSelect(item)">
+      <i class="fa fa-caret-right" aria-hidden="true"></i> {{item.title}}
+    </a>
+    <ul *ngIf="item.menus"  class="nav" [class.hide]="!item.active">
+      <li *ngFor="let subItem of item.menus" [class.active]="subItem.active">
+        <a href="javascript:;" (click)="onSelect(subItem, item.menus)"><i class="fa fa-tasks"></i> {{subItem.title}}</a>
+      </li>
+    </ul>
+  </li>
+</ul>

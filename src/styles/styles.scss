@@ -13,12 +13,83 @@
   position: relative;
 }
 
+header {
+  .navbar-inverse {
+    .navbar-header {
+      > a.navbar-brand {
+        width: 48px;
+        overflow: hidden;
+      }
+    }
+    .navbar-nav {
+      > li {
+        > a {
+          &:hover,
+          &:focus {
+            background-color: $gray-dark;
+          }
+          > .badge {
+            &.msg {
+              background-color: $brand-warning;
+              font-weight: normal;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 sidebar {
   width: $side-bar-width;
   position: fixed;
-  background-color: #000;
+  background-color: #333744;
   bottom: 0px;
   top: $navbar-height;
+  overflow: hidden;
+  > .sidebar-fold >
+    a {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      color: $navbar-inverse-link-color;
+      text-align: center;
+      background-color: #4A5064;
+  }
+  > .nav {
+    li {
+      > a {
+        background-color: #333744;
+        border: none 0;
+        overflow: hidden;
+        color: $navbar-inverse-link-color;
+        font-size: 12px;
+        font-weight: normal;
+        &:hover,
+        &:focus {
+          background-color: #42485B;
+        }
+        &.sidebar-title {
+          background-color: #42485B;
+          &:hover {
+            background-color: #00C1DE;
+            color: #fff;
+            font-weight: normal;
+          }
+        }
+      }
+      &.active {
+        > a,
+          &:hover,
+          &:focus {
+          background-color: #00C1DE;
+          color: #fff;
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }
 
 .main-container {

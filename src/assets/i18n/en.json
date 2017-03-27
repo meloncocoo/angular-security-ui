@@ -9,14 +9,14 @@
   },
   "header": {
     "title": "安全分析",
-    "about": "关于",
-    "language": "Language",
+    "about": "About",
+    "language": "中文",
     "upload-tooltip": "上传文件"
   },
   "footer": {
     "guide": "向导",
     "api": "API",
-    "about": "关于",
+    "about": "About",
     "terms-of-service": "服务条款",
     "privacy-policy": "隐私政策",
     "change-log-partner": "更新日志",
