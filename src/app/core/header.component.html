@@ -1,0 +1,53 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" (click)="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a routerLink="/home" class="navbar-brand"><i class="fa fa-recycle" aria-hidden="true"></i></a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" [collapse]="!isCollapsed">
+      <ul class="nav navbar-nav">
+        <li class="dropdown" dropdown>
+          <a href="javascript:;" class="dropdown-toggle" dropdownToggle> {{'header.language' | translate}} <span class="caret"></span></a>
+          <ul dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="single-button">
+            <li><a href="javascript:;" (click)="setLanguage('zh')">中文</a></li>
+            <li><a href="javascript:;" (click)="setLanguage('en')">English</a></li>
+          </ul>
+        </li>
+        <li *ngIf="!hideMenu">
+          <a href="javascript:;">API</a>
+        </li>
+        <li *ngIf="!hideMenu">
+          <a href="javascript:;">{{'header.about' | translate}}</a>
+        </li>
+      </ul>
+      <div class="navbar-left search-box">
+        <form *ngIf="showSearchBox" class="navbar-form" #searchForm="ngForm" (ngSubmit)="onSubmit(searchInput)" role="form">
+          <div class="input-group">
+            <input type="text" required #searchInput name="text" class="form-control" [attr.placeholder]="'search.input' | translate">
+            <div class="input-group-btn">
+              <span class="btn btn-default" placement="bottom" [tooltip]="'header.upload-tooltip' | translate"><i class="fa fa-upload"></i></span>
+              <button type="submit" class="btn btn-default btn-info" [disabled]="!searchForm.form.valid">{{'buttons.analyse' | translate}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="javascript:;" class="btn btn-link navbar-btn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </li>
+        <li><a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i> {{'buttons.signin' | translate}}</a></li>
+        <li><a href="javascript:;">{{'buttons.signup' | translate}}</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

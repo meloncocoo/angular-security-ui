@@ -1,0 +1,27 @@
+/* this file will be extracted to main dist folder and is imported in index.html */
+/* This file is for setting global styles  */
+@import 'variables';
+@import "bootstrap-extend";
+@import "font-awesome-extend";
+
+@import '../assets/css/melon-ui';
+
+.container-fluid.home {
+  padding: $navbar-height 0 175px 0;
+  min-height: 600px;
+  background-color: #eaedf1;
+  position: relative;
+}
+
+sidebar {
+  width: $side-bar-width;
+  position: fixed;
+  background-color: #000;
+  bottom: 0px;
+  top: $navbar-height;
+}
+
+.main-container {
+  left: $side-bar-width;
+  position: absolute;
+}

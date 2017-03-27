@@ -1,0 +1,133 @@
+{
+  "messages": {
+    "no-data": "无匹配数据",
+    "no-sample-match": "No Sample match",
+    "no-scan-content": "不能识别输入的内容的类型!",
+    "to-check-input": "请检查您输入的信息是否有误",
+    "to-auto-back": "秒后秒后自动跳转到上一页面",
+    "to-back-text": "手动返回"
+  },
+  "header": {
+    "title": "安全分析",
+    "about": "关于",
+    "language": "Language",
+    "upload-tooltip": "上传文件"
+  },
+  "footer": {
+    "guide": "向导",
+    "api": "API",
+    "about": "关于",
+    "terms-of-service": "服务条款",
+    "privacy-policy": "隐私政策",
+    "change-log-partner": "更新日志",
+    "partner": "合作伙伴"
+  },
+  "search": {
+    "example": "样例： manage-163-account.com 82.165.37.26 DarkHotel 数字签名 文件",
+    "input": "IP、域名、文件HASH(MD5/SHA1/SHA256)"
+  },
+  "buttons": {
+    "analyse": "分析",
+    "signin": "登录",
+    "signup": "注册"
+  },
+  "links": {
+    "home": "首页"
+  },
+  "home": {
+    "title": "威胁分析平台",
+    "visitor": "访问者IP："
+  },
+  "domain": {
+    "title": "分析报告",
+    "DNS": "域名服务商",
+    "DNS-server": "域名服务器",
+    "alexa-rank": "Alexa排名",
+    "tags": "Tags",
+    "user-marks": "用户标记",
+    "c2server": "远控服务器({{value}})",
+    "malicious-site": "恶意网站({{value}})",
+    "normal-site": "正常网站({{value}})",
+    "phishing": "钓鱼网站({{value}})",
+
+    "intelligence": "威胁情报",
+    "IP": {
+      "title": "IP分析",
+      "address": "IP地址",
+      "ip-counts": "（共有 {{ipCounts}} 个域名指向此地址）",
+      "location": "地理位置",
+      "ASN": "ASN",
+
+      "history": "历史解析记录",
+      "time": "时间",
+      "IP": "IP",
+      "region": "国家",
+      "province": "省/州",
+      "carrier": "运营商",
+
+      "domain-list": "指向同-IP的域名列表",
+      "domain": "域名"
+    },
+    "sub-domains":{
+      "title": "子域名",
+      "sub-domains": "子域名",
+      "current-dns-data": "当前DNS数据",
+      "type": "数据类型",
+      "data": "数据内容",
+      "login-tip": "共{{total}}个，查看此信息需要确认用户权限，请 登录"
+    },
+    "whois": {
+      "title": "Whois",
+      "information": {
+        "title": "当前注册信息",
+        "registrant": "注册者",
+        "registration": "注册机构",
+        "email": "邮箱",
+        "address": "地址",
+        "phone": "电话",
+        "creation-date": "注册时间",
+        "expire-eate": "过期时间",
+        "updated-date": "更新时间",
+        "registrar": "域名服务商",
+        "name-server": "域名服务器"
+      },
+      "date": "日期",
+      "updates": "重要信息更新",
+      "history": "历史注册信息",
+      "login-tip": "查看此信息需要确认用户权限，请 登录",
+      "type": {
+        "add": "新增",
+        "update": "修改",
+        "non-critical": "非重要更新"
+      },
+      "content": {
+        "register": "注册者",
+        "email": "邮箱",
+        "registration": "注册机构"
+      }
+    },
+    "cert": {
+      "title": "数字证书",
+      "information": "SSL相关证书信息",
+      "user": "使用者",
+      "issuer": "颁发者",
+      "begin-time": "开始时间",
+      "disable-time": "失效时间",
+      "certificate": "证书指纹",
+      "status": {
+        "name": "状态",
+        "valid": "有效证书",
+        "unvalid": "无效证书"
+      },
+      "no-data": "未采集到数字证书"
+    },
+    "visualization": "可视分析",
+    "community": "情报社区",
+
+    "threat-intelligence-detection": "威胁情报检测",
+    "relate-event": "相关事件",
+    "suspect-urls-on-this-address": "该地址上的可疑URL",
+    "samples-in-communication": "与该地址通讯的样本"
+
+  }
+}
