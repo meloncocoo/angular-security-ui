@@ -4,7 +4,7 @@
     "**/.git": true,
     ".github": true,
     "dll": true,
-    "dist": true,
+    // "dist": true,
     ".editorconfig": true,
     ".gitattributes": true,
     // ".gitignore": true,

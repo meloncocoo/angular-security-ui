@@ -23,8 +23,8 @@ import { AppState } from './app.service';
 
     <main>
       <div class="container-fluid home">
-        <sidebar></sidebar>
-        <div class="main-container">
+        <sidebar (expandChange)="onExpandChange($event)"></sidebar>
+        <div class="main-container" [class.unfold]="!expand">
           <router-outlet></router-outlet>
         </div>
       </div>
@@ -32,6 +32,7 @@ import { AppState } from './app.service';
   `
 })
 export class AppComponent implements OnInit {
+  public _expand: boolean = true;
   public angularclassLogo = 'assets/img/angularclass-avatar.png';
   public name = 'Angular 2 Webpack Starter';
   public url = 'https://twitter.com/AngularClass';
@@ -42,6 +43,14 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
+  }
+
+  public onExpandChange(expand) {
+    this._expand = expand;
+  }
+
+  public get expand() {
+    return this._expand;
   }
 
 }
