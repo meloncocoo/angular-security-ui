@@ -9,13 +9,56 @@ export class SidebarComponent /*implements OnInit*/ {
   // constructor() { }
 
   private _menus = [
-    { id: 1, title: '工作台' },
+    { id: 1, title: 'Dashboard' },
+    { id: 2, title: 'Asset Mgmt' },
+    { id: 2, title: 'Vulnerability Mgmt' },
     {
-      id: 2, title: '黑名单',
+      id: 2, title: 'Threat Intel Mgmt',
       menus: [
-        { id: 201, title: '子菜单1' },
-        { id: 202, title: '子菜单2' },
-        { id: 203, title: '子菜单3' },
+        { id: 201, title: 'My Threat Intel List' },
+        { id: 202, title: 'Search' }
+      ]
+    },
+    {
+      id: 5, title: 'Risk Assessment',
+      menus: [
+        { id: 501, title: 'Risk Model' }
+      ]
+    },
+    {
+      id: 6, title: 'Suspicious Transaction',
+      menus: [
+        { id: 601, title: 'Alerts' },
+        { id: 602, title: 'Reports' },
+        { id: 603, title: 'Model' }
+      ]
+    },
+    {
+      id: 7, title: 'IOC inputs',
+      menus: [
+        { id: 701, title: 'Network IOC' },
+        { id: 702, title: 'Endpoint IOC' }
+      ]
+    },
+    { id: 8, title: 'Query' },
+    {
+      id: 9, title: 'Reports',
+      menus: [
+        { id: 901, title: 'Audit Reports' },
+        { id: 902, title: 'Risk Reports' }
+      ]
+    },
+    {
+      id: 10, title: 'User Admin',
+      menus: [
+        { id: 1001, title: 'User Activities' }
+      ]
+    },
+    {
+      id: 11, title: 'Settings',
+      menus: [
+        { id: 1101, title: 'Health Check' },
+        { id: 1102, title: 'Backup' }
       ]
     }
   ];
