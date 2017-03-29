@@ -77,17 +77,138 @@
 </div>
 
 <div class="row">
-  <div class="col-md-8">
-    <div class="panel panel-default height-180">
+  <div class="col-md-12">
+    <div class="panel panel-default">
       <div class="panel-body">
-        <h5>关注</h5>
+        <div class="row m-b-15">
+          <div class="col-md-4 p-l-20">
+            <div>安全评级</div>
+            <div class="font-size-30 green-600">相当安全</div>
+            <div>实时信息统计</div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="counter-label">今日交易量</div>
+                <div class="counter-number-group">
+                  <span class="counter-number-related">次数</span>
+                  <span class="counter-number">12,346</span>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="chart-wrapper">
+                  <canvas baseChart height="100" [datasets]="[{data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'}]" [labels]="['2006', '2007', '2008', '2009', '2010', '2011', '2012']"
+                    [options]="{scaleShowVerticalLines: false, responsive: true, scales: {xAxes: [{display: false}], yAxes: [{display: false}]}}"
+                    [colors]="[{backgroundColor: '#46be8a'}]" [legend]="false"
+                    [legend]="true" [chartType]="'bar'"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="counter-label">今日交易量</div>
+                <div class="counter-number-group">
+                  <span class="counter-number-related">次数</span>
+                  <span class="counter-number">12,346</span>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="chart-wrapper">
+                  <canvas baseChart height="100" [datasets]="[{data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A', borderWidth: .1}]" [labels]="['2006', '2007', '2008', '2009', '2010', '2011', '2012']"
+                    [options]="{scaleShowVerticalLines: false, responsive: true, scales: {xAxes: [{display: false}], yAxes: [{display: false}]}}"
+                    [colors]="[{backgroundColor: '#62a8ea'}]" [legend]="false"
+                    [legend]="true" [chartType]="'bar'"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="chart-wrapper">
+              <canvas baseChart height="80" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                [legend]="lineChartLegend" [chartType]="lineChartType">
+              </canvas>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="panel panel-default height-180">
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
       <div class="panel-body">
-        <h5>管理助手</h5>
+        <div class="row">
+          <div class="col-md-6">
+            <div>客户数</div>
+            <div class="text-center m-t-10 font-size-40">2,432</div>
+          </div>
+          <div class="col-md-6">
+            <div class="chart-wrapper">
+              <div class="current font-size-20">12%</div>
+              <round-progress [current]="120" [max]="1000" [responsive]="true" [stroke]="30"></round-progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div>黑名单数</div>
+            <div class="text-center m-t-10 font-size-40">456</div>
+          </div>
+          <div class="col-md-6">
+            <div class="chart-wrapper">
+              <div class="current font-size-20">45%</div>
+              <round-progress [current]="456" [max]="1000" [responsive]="true" [stroke]="30" [color]="'#f96868'"></round-progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div>今日可疑数据</div>
+            <div class="text-center m-t-10 font-size-40">678</div>
+          </div>
+          <div class="col-md-6">
+            <div class="chart-wrapper">
+              <div class="current font-size-20">67%</div>
+              <round-progress [current]="678" [max]="1000" [responsive]="true" [stroke]="30" [color]="'#62a8ea'"></round-progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div>今日大额交易</div>
+            <div class="text-center m-t-10 font-size-40">10</div>
+          </div>
+          <div class="col-md-6">
+            <div class="chart-wrapper">
+              <div class="current font-size-20">1%</div>
+              <round-progress [current]="10" [max]="1000" [responsive]="true" [stroke]="30" [color]="'#926dde'"></round-progress>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

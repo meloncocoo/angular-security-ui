@@ -21,14 +21,14 @@ import { AppState } from './app.service';
   template: `
     <header></header>
 
-    <main>
-      <div class="container-fluid home">
-        <sidebar (expandChange)="onExpandChange($event)"></sidebar>
-        <div class="main-container" [class.unfold]="!expand">
+    <div class="container-fluid home">
+      <sidebar (expandChange)="onExpandChange($event)"></sidebar>
+      <div class="main-container" [class.unfold]="!expand">
+        <div class="prod-body">
           <router-outlet></router-outlet>
         </div>
       </div>
-    </main>
+    </div>
   `
 })
 export class AppComponent implements OnInit {

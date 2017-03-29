@@ -23,6 +23,13 @@ import {
   TabsModule
 } from 'ng2-bootstrap';
 
+import {
+  ChartistModule
+} from 'ng-chartist';
+
+import { ChartsModule } from 'ng2-charts';
+import { RoundProgressModule } from 'angular-svg-round-progressbar';
+
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -68,6 +75,9 @@ type StoreType = {
     // HttpModule,
     CoreModule,
     SharedModule,
+    ChartistModule,
+    ChartsModule,
+    RoundProgressModule,
     TabsModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
