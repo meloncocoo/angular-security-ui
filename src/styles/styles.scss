@@ -22,7 +22,7 @@ header {
   .navbar-inverse {
     .navbar-header {
       > a.navbar-brand {
-        width: 48px;
+        width: $side-bar-min-width;
         overflow: hidden;
       }
     }
@@ -63,7 +63,7 @@ sidebar {
       background-color: #4A5064;
     }
     &.unfold {
-      width: 48px;
+      width: $side-bar-min-width;
     }
   }
   .nav {
@@ -107,7 +107,7 @@ sidebar {
       }
     }
     &.unfold {
-      width: 48px;
+      width: $side-bar-min-width;
       > li > a {
         padding: 10px 15px;
         text-align: center;
@@ -125,7 +125,7 @@ sidebar {
   padding: 0px;
   overflow: hidden;
   &.unfold {
-    left: 48px;
+    left: $side-bar-min-width;
   }
   > .prod-body {
     padding: 15px;
@@ -140,14 +140,12 @@ sidebar {
 }
 
 .panel {
+  overflow: hidden;
   > .panel-body {
     overflow: hidden;
     h5 {
       margin: 0px;
     }
-  }
-  &.height-180 {
-    height: 180px;
   }
   &.tabs-container {
     > .panel-body {
@@ -186,6 +184,7 @@ sidebar {
           > .tab-pane {
             padding: 15px;
             font-size: 12px;
+            overflow: hidden;
             > ul.list-group {
               list-style: none;
               > li {

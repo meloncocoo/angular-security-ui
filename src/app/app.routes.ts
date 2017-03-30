@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard';
 import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
-  { path: '',           component: DashboardComponent },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'home',       component: HomeComponent },
   { path: 'dashboard',  component: DashboardComponent }
 ];
