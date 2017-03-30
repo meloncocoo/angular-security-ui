@@ -46,7 +46,7 @@ export class SidebarComponent /*implements OnInit*/ {
     {
       id: 9, title: 'REPORTS',
       menus: [
-        { id: 901, title: 'AUDIT REPORTS', icon: 'fa fa-line-chart' },
+        { id: 901, title: 'AUDIT REPORTS', href: '/report/audit', icon: 'fa fa-line-chart' },
         { id: 902, title: 'RISK REPORTS', icon: 'fa fa-laptop' }
       ]
     },

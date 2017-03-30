@@ -16,11 +16,13 @@ import {
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { SidebarComponent } from './sidebar.component';
+import { PageHeaderComponent } from './page-header.component';
 
 let COMPONENTS = [
   HeaderComponent,
   FooterComponent,
-  SidebarComponent
+  SidebarComponent,
+  PageHeaderComponent
 ];
 
 @NgModule({

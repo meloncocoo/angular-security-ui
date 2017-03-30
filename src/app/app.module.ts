@@ -43,6 +43,8 @@ import { HomeComponent } from './home';
 import { DashboardComponent } from './dashboard';
 import { XLargeDirective } from './home/x-large';
 
+import { ReportModule }      from './report/report.module';
+
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
@@ -79,6 +81,7 @@ type StoreType = {
     ChartsModule,
     RoundProgressModule,
     TabsModule.forRoot(),
+    ReportModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

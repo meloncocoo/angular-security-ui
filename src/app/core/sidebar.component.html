@@ -10,8 +10,8 @@
       <i *ngIf="item.menus" class="fa" [class.fa-caret-right]="item.active" [class.fa-caret-down]="!item.active" aria-hidden="true"></i> <span [hidden]="!expand">{{item.title}}</span>
     </a>
     <ul *ngIf="item.menus"  class="nav" [class.hide]="!item.active" [class.unfold]="!expand">
-      <li *ngFor="let subItem of item.menus" [class.active]="subItem.active">
-        <a href="javascript:;" (click)="onSelect(subItem, item.menus)"><i *ngIf="subItem.icon" [ngClass]="subItem.icon" aria-hidden="true"></i> <span [hidden]="!expand">{{subItem.title}}</span></a>
+      <li *ngFor="let subItem of item.menus" routerLinkActive="active">
+        <a routerLink="{{subItem.href}}" (click)="onSelect(subItem, item.menus)"><i *ngIf="subItem.icon" [ngClass]="subItem.icon" aria-hidden="true"></i> <span [hidden]="!expand">{{subItem.title}}</span></a>
       </li>
     </ul>
   </li>
